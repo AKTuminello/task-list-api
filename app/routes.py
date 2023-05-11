@@ -134,7 +134,7 @@ def delete_task(task_id):
 def send_slack_notification(task_title, is_complete):
     url = "https://slack.com/api/chat.postMessage"
     headers = {
-        "Authorization": "Bearer " + SLACKBOT_TOKEN
+        "Authorization": f"Bearer {SLACKBOT_TOKEN}"
     }
 
     if is_complete:
